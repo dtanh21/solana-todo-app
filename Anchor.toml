@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+solana_todo_app = "mezp3ahKW8hSFg5Fy5Tn1N65r7GEvSMksMAixaCqcwR"
+
+[programs.devnet]
+solana_todo_app = "mezp3ahKW8hSFg5Fy5Tn1N65r7GEvSMksMAixaCqcwR"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
